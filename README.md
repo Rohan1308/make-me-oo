@@ -25,4 +25,14 @@ He thought it'll be a good idea to convert this to Object Oriented Programming. 
 
 However, his trainer told him that what he did is not Object Oriented programming and asked Shivam to try again. 
 - Try to articulate problems with Shivam's OOP solution. (Write it somewhere and share it with your trainer)
-- Fork the project and fix the design related problem with Shivam's OOP solution. Share that with your trainer too.
+- Fork the project and fix the design related problem with Shivam's OOP solution. Share that with your trainer too.   
+  
+***
+
+ ## Problems with Shivam's CodeBase 
+  - Encapsulation is missing - There is a point class but it only contains the attributes and not any related methods.
+  - Use of setters and getters is a bad practice and breaks abstraction, the class fields despite being private can be accessed and modified by methods outside of the class. 
+  - Static methods are used which should be avoided whenever possible. 
+  - Test cases do not follow AAA format 
+  - Static import for assertEquals can be made to make the code cleaner. 
+ 
