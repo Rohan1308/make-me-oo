@@ -1,5 +1,6 @@
 package org.oop;
 
+import static java.lang.Math.atan2;
 import static java.lang.Math.sqrt;
 
 public class Point {
@@ -19,5 +20,11 @@ public class Point {
 
     private double square(double n) {
         return Math.pow(n, 2);
+    }
+
+    public double direction(Point p) {
+        double yDiff = p.y - this.y;
+        double xDiff = p.x - this.x;
+        return atan2(yDiff, xDiff);
     }
 }
