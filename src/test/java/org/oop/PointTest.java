@@ -48,14 +48,14 @@ public class PointTest {
         Point origin = new Point(0, 0);
         Point point1 = new Point(1, 0);
 
-        double direction1 = origin.direction(point1);
+        double direction1 = origin.directionFrom(point1);
 
         assertEquals(0, direction1);
 
 
         Point point2 = new Point(3, 0);
 
-        double direction2 = origin.direction(point2);
+        double direction2 = origin.directionFrom(point2);
 
         assertEquals(0, direction2);
     }
@@ -65,14 +65,14 @@ public class PointTest {
         Point origin = new Point(0, 0);
         Point point1 = new Point(-1, 0);
 
-        double direction1 = origin.direction((point1));
+        double direction1 = origin.directionFrom((point1));
 
         assertEquals(Math.PI, direction1);
 
 
         Point point2 = new Point(-3, 0);
 
-        double direction2 = origin.direction((point2));
+        double direction2 = origin.directionFrom((point2));
 
         assertEquals(Math.PI, direction2);
     }
@@ -82,14 +82,14 @@ public class PointTest {
         Point origin = new Point(0, 0);
         Point point1 = new Point(0, 1);
 
-        double direction1 = origin.direction(point1);
+        double direction1 = origin.directionFrom(point1);
 
         assertEquals(Math.PI / 2, direction1);
 
 
         Point point2 = new Point(0, 3);
 
-        double direction2 = origin.direction(point2);
+        double direction2 = origin.directionFrom(point2);
 
         assertEquals(Math.PI / 2, direction2);
     }

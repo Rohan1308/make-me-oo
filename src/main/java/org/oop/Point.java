@@ -22,7 +22,7 @@ public class Point {
         return Math.pow(n, 2);
     }
 
-    public double direction(Point p) {
+    public double directionFrom(Point p) {
         double yDiff = p.y - this.y;
         double xDiff = p.x - this.x;
         return atan2(yDiff, xDiff);
